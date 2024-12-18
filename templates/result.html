@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .result-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .score-card {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .score-card h3 {
+            font-size: 2em;
+            color: #4caf50;
+            margin-bottom: 10px;
+        }
+
+        .score-card p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .score {
+            font-size: 3em;
+            font-weight: bold;
+            color: #ff5722;
+            margin-bottom: 20px;
+        }
+
+        .result-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #4caf50;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .result-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Results Page -->
+    <div class="result-container">
+        <h2>Quiz Results</h2>
+        <div class="score-card">
+            <h3>Your Score:</h3>
+            <div class="score">{{ score }}</div>
+            <p>Questions Attempted: {{ attempted }}</p>
+            <p>Correct Answers: {{ score }}</p>
+            <p>Wrong Answers: {{ wrong }}</p>
+            <p>Questions Skipped: {{ skipped }}</p>
+      
+        </div>
+        <button class="result-btn" onclick="window.location.href='/quiz'">Back to Quiz</button>
+    </div>
+</body>
+</html>

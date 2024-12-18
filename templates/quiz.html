@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #4facfe, #00f2fe);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Quiz Container */
+        .quiz-container {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            max-width: 1200px;
+            width: 100%;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        /* Grid Layout for Questions */
+        .questions-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .question-box {
+            background: #f9f9f9;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .question-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            border-color: #4facfe;
+        }
+
+        .question-number {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #4facfe;
+            margin-bottom: 8px;
+        }
+
+        .question-text {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        /* Options */
+        .options label {
+            display: block;
+            background: #fff;
+            margin: 8px 0;
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .options input {
+            margin-right: 10px;
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .options label:hover {
+            background-color: #4facfe;
+            color: #fff;
+            border-color: #4facfe;
+        }
+
+        /* Submit Button */
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background: #4facfe;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .submit-btn:hover {
+            background: #00f2fe;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Quiz Page -->
+    <div class="quiz-container">
+        <h2>Quiz</h2>
+        <form method="POST">
+            <div class="questions-wrapper">
+                {% for question in questions %}
+                <div class="question-box">
+                    <div class="question-number">Q{{ loop.index }}.</div>
+                    <div class="question-text">{{ question['question'] }}</div>
+                    <div class="options">
+                        {% for option in question['options'] %}
+                        <label>
+                            <input type="radio" name="{{ question['id'] }}" value="{{ option }}">
+                            {{ option }}
+                        </label>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

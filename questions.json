@@ -1,0 +1,184 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "What is the capital of France?",
+            "answer": "Paris",
+            "options": ["Berlin", "Madrid", "Paris", "Rome"]
+        },
+        {
+            "id": 2,
+            "question": "Which planet is known as the Red Planet?",
+            "answer": "Mars",
+            "options": ["Earth", "Jupiter", "Mars", "Venus"]
+        },
+        {
+            "id": 3,
+            "question": "What is the largest mammal in the world?",
+            "answer": "Blue Whale",
+            "options": ["Elephant", "Giraffe", "Blue Whale", "Shark"]
+        },
+        {
+            "id": 4,
+            "question": "How many continents are there on Earth?",
+            "answer": "7",
+            "options": ["5", "6", "7", "8"]
+        },
+        {
+            "id": 5,
+            "question": "Who wrote 'Romeo and Juliet'?",
+            "answer": "William Shakespeare",
+            "options": ["Charles Dickens", "William Shakespeare", "Leo Tolstoy", "Jane Austen"]
+        },
+        {
+            "id": 6,
+            "question": "Which element has the chemical symbol 'O'?",
+            "answer": "Oxygen",
+            "options": ["Gold", "Oxygen", "Iron", "Silver"]
+        },
+        {
+            "id": 7,
+            "question": "What is 5 multiplied by 6?",
+            "answer": "30",
+            "options": ["20", "25", "30", "35"]
+        },
+        {
+            "id": 8,
+            "question": "Which ocean is the largest?",
+            "answer": "Pacific Ocean",
+            "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"]
+        },
+        {
+            "id": 9,
+            "question": "What is the chemical symbol for water?",
+            "answer": "H2O",
+            "options": ["CO2", "H2O", "O2", "NaCl"]
+        },
+        {
+            "id": 10,
+            "question": "Who painted the Mona Lisa?",
+            "answer": "Leonardo da Vinci",
+            "options": ["Pablo Picasso", "Vincent van Gogh", "Leonardo da Vinci", "Michelangelo"]
+        },
+        {
+            "id": 11,
+            "question": "What is the square root of 64?",
+            "answer": "8",
+            "options": ["6", "7", "8", "9"]
+        },
+        {
+            "id": 12,
+            "question": "What is the largest desert in the world?",
+            "answer": "Sahara",
+            "options": ["Gobi", "Kalahari", "Sahara", "Antarctica"]
+        },
+        {
+            "id": 13,
+            "question": "Which country is known as the Land of the Rising Sun?",
+            "answer": "Japan",
+            "options": ["China", "Japan", "Thailand", "South Korea"]
+        },
+        {
+            "id": 14,
+            "question": "What is the main ingredient in guacamole?",
+            "answer": "Avocado",
+            "options": ["Tomato", "Onion", "Avocado", "Cucumber"]
+        },
+        {
+            "id": 15,
+            "question": "Which bird is known for its ability to mimic sounds?",
+            "answer": "Parrot",
+            "options": ["Sparrow", "Crow", "Parrot", "Eagle"]
+        },
+        {
+            "id": 16,
+            "question": "Which gas do plants absorb from the atmosphere?",
+            "answer": "Carbon Dioxide",
+            "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"]
+        },
+        {
+            "id": 17,
+            "question": "What is the boiling point of water at sea level?",
+            "answer": "100°C",
+            "options": ["90°C", "100°C", "120°C", "150°C"]
+        },
+        {
+            "id": 18,
+            "question": "Which continent is the smallest?",
+            "answer": "Australia",
+            "options": ["Europe", "Australia", "South America", "Antarctica"]
+        },
+        {
+            "id": 19,
+            "question": "Who discovered gravity?",
+            "answer": "Isaac Newton",
+            "options": ["Albert Einstein", "Galileo Galilei", "Isaac Newton", "Niels Bohr"]
+        },
+        {
+            "id": 20,
+            "question": "How many sides does a hexagon have?",
+            "answer": "6",
+            "options": ["5", "6", "7", "8"]
+        },
+        {
+            "id": 21,
+            "question": "What is the currency of the United States?",
+            "answer": "Dollar",
+            "options": ["Euro", "Pound", "Dollar", "Yen"]
+        },
+        {
+            "id": 22,
+            "question": "What is the smallest unit of life?",
+            "answer": "Cell",
+            "options": ["Atom", "Molecule", "Cell", "Organ"]
+        },
+        {
+            "id": 23,
+            "question": "Which instrument is used to measure temperature?",
+            "answer": "Thermometer",
+            "options": ["Barometer", "Thermometer", "Hygrometer", "Anemometer"]
+        },
+        {
+            "id": 24,
+            "question": "What language is primarily spoken in Brazil?",
+            "answer": "Portuguese",
+            "options": ["Spanish", "Portuguese", "French", "English"]
+        },
+        {
+            "id": 25,
+            "question": "Which country hosted the 2016 Summer Olympics?",
+            "answer": "Brazil",
+            "options": ["China", "Brazil", "Japan", "USA"]
+        },
+        {
+            "id": 26,
+            "question": "What is the main gas found in the air we breathe?",
+            "answer": "Nitrogen",
+            "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"]
+        },
+        {
+            "id": 27,
+            "question": "What is 9 multiplied by 9?",
+            "answer": "81",
+            "options": ["72", "81", "90", "99"]
+        },
+        {
+            "id": 28,
+            "question": "What is the closest planet to the Sun?",
+            "answer": "Mercury",
+            "options": ["Earth", "Venus", "Mercury", "Mars"]
+        },
+        {
+            "id": 29,
+            "question": "Which organ pumps blood in the human body?",
+            "answer": "Heart",
+            "options": ["Liver", "Brain", "Heart", "Lung"]
+        },
+        {
+            "id": 30,
+            "question": "Who was the first President of the United States?",
+            "answer": "George Washington",
+            "options": ["Thomas Jefferson", "George Washington", "Abraham Lincoln", "John Adams"]
+        }
+    ]
+}
